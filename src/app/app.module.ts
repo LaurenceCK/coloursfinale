@@ -6,11 +6,9 @@ import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TagInputModule } from 'ngx-chips';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
-// import { DragDropModule } from '@angular/cdk/drag-drop';
 // import { FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
 
-import { AppComponent } from './app.component';
+import { AppComponent }   from './app.component';
 
 import { SidebarModule } from './sidebar/sidebar.module';
 import { FixedPluginModule } from './shared/fixedplugin/fixedplugin.module';
@@ -21,6 +19,7 @@ import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { AppRoutes } from './app.routing';
 
 import { environment } from 'environments/environment';
+
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -29,7 +28,8 @@ import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
 
-// Ngx-Charts
+//Ngx-Charts
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ProjectService } from './services/project.service';
 import { PersonalService } from './services/personal.service';
 import { TaskService } from './services/task.service';
@@ -48,7 +48,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
         NgSelectModule,
         TagInputModule,
         NgxChartsModule,
-        // DragDropModule,
         // FileUploader,
         // FileSelectDirective,
         JWBootstrapSwitchModule,
@@ -66,6 +65,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
         BsDropdownModule.forRoot(),
         TooltipModule.forRoot(),
         ModalModule.forRoot()
+
     ],
     providers: [
         ProjectService, PersonalService, TaskService,
